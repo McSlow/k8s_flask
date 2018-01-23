@@ -6,7 +6,7 @@ from redis import Redis
 import socket
 app = Flask(__name__)
 redis = Redis(host=os.environ['REDIS_HOST'], port=os.environ['REDIS_PORT'])
-bind_port = os.environ['BIND_PORT']
+
 
 @app.route('/')
 def hello_world():
